@@ -1,0 +1,207 @@
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('/fonts/PixelGame-R9AZe.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Speed';
+    src: url('/fonts/SpeedrushRegular-qZWp6.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rufing';
+    src: url('/fonts/RufingPersonalUse-AL5Dp.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cubic';
+    src: url('/fonts/CubicPixel-lgEmy.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pgame';
+    src: url('/fonts/PixelGamingRegular-d9w0g.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rege';
+    src: url('/fonts/RenegadePursuit-ywMr5.ttf') format('truetype');
+}
+
+button{
+    font-family: 'Cubic';
+}
+
+/* Navbar */
+
+.logo{
+    font-size: 4rem;
+    font-family: 'Pixel';
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.783);
+    padding: 0 2rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.connect, .google{
+    margin: .5rem 0;
+    padding : .5rem 1rem;
+    cursor: pointer;
+}
+
+.ul{
+    height: 100%;
+}
+
+.ul li{
+    font-size: 1.2rem;
+    font-family: 'Speed';
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Herosection */
+
+.heroArea{
+    width: 100%;
+    height: 100vh;
+    background: url('/videos/background1.gif');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heroInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    animation: slideInFromLeft 1.2s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading1{
+    font-size: 5rem;
+    font-family: 'Speed';
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.heading2{
+    font-size: 1.3rem;
+    font-family: 'Rufing';
+}
+
+.explore{
+    font-size: 1.2rem;
+    background-color: red;
+    padding: .4rem 1.4rem;
+    border-radius: .6rem;
+    cursor: pointer;
+}
+
+
+/* Quest */
+
+.questArea{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 25rem;
+
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-bottom: solid 2px skyblue;
+}
+
+.qinfoArea{
+    width: 60%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
+.thumbnail{
+    width: 20rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transform: all 0.18s ease;
+}
+
+.thumbnail:hover{
+    scale: 1.01;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.qHeadings, .descArea{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.challangeNo{
+    font-size: 1.2rem;
+    font-family: 'Pgame';
+}
+
+.questHeading{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Rege';
+    /* animation: slideInFromLeft 1s ease-out; */
+    cursor: pointer;
+}
+
+.qDesc{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    /* animation: slideInFromLeft 1s ease-out; */
+    cursor: pointer;
+}
+
+.qBut{
+    background-color: skyblue;
+    border: rgb(73, 73, 252) solid 2px;
+    font-size: 1rem;
+    padding: 0.4rem 0;
+    border-radius: 2rem;
+    width: 8rem;
+    margin-top: 2rem;
+    /* animation: slideInFromLeft 1s ease-out; */
+}
+
